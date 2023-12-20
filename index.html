@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Bilangan terbesar
+        let a = 27
+        let b = 30
+        let c = 1
+        if (a>b && a>c) {
+            console.log(a)
+        }
+        if (b>a && b>c) {
+            console.log(b)
+        }
+        if (c>a && c>b) {
+            console.log(c)
+        }
+        else if (a==b && a==c) {
+            console.log("semua bilangan sama")
+        }
+
+        //Saklar lampu ON OFF
+        let saklar = 9
+        let ON = 1
+        if (saklar == 1) {
+            console.log ("ON")
+        }
+        else if (saklar == 0) {
+            console.log ("OFF")
+        } 
+        else {
+            console.log ("Masukan angka 1 atau 0")
+        }
+
+        //umur
+        let umur = 17;
+
+        if (umur >=17) {
+            console.log ("boleh menonton")
+        } else if (umur <17) {
+            console.log ("tidak boleh menonton")
+        }
+
+        // genap ganjil negatif positif
+        let bilangan = 2 
+        let sisa = bilangan %2
+
+        if (sisa == 0) {
+            console.log("Bilangan Genap ")
+        }
+        else (
+            console.log("Bilagan Ganjil")
+        )
+
+        if (bilangan < 0) {
+            console.log("Bilangan Negatif")
+        }
+        if (bilangan > 0) {
+            console.log("Bilangan Positif")
+        }
+
+        //diskon dan barang
+        let harga1, harga2, harga3, total, diskon, bayar
+
+        harga1 = Number(prompt("Masukkan harga barang pertama:"));
+        harga2 = Number(prompt("Masukkan harga barang kedua:"));
+        harga3 = Number(prompt("Masukkan harga barang ketiga:"));
+
+        total = harga1 + harga2 + harga3
+
+        if (total > 10000) {
+            diskon = total * 0.1;
+            bayar = total - diskon;
+            console.log("Total harga: " + total);
+            console.log("Diskon 10%: " + diskon);
+            console.log("Harga setelah diskon: " + bayar);
+        } 
+        else {
+            diskon = 0;
+            bayar = total;
+            console.log("Total harga: " + total);
+            console.log("Tidak ada diskon");
+            console.log("Harga setelah diskon: " + bayar);
+        }
+
+        //jam lembur
+        let JamLembur = Number(prompt("Berapa jam anda lembur?"))
+        if (JamLembur < 6) {
+            console.log("Gaji lembur anda: Rp100.000")
+        }
+        else if (JamLembur = 6) {
+            console.log("Gaji lembur anda: Rp200.000")
+        }
+        else if (JamLembur > 6) {
+            console.log("Gaji lembur anda: Rp300.000")
+        }
+
+        //pintu air
+        let KondisiPintuAir = Number(prompt("Masukkan tinggi air (Meter)"))
+
+        if (KondisiPintuAir <= 500) {
+            console.log("Kondisi AMAN")
+        }
+        else if (KondisiPintuAir > 501 && KondisiPintuAir <=600) {
+            console.log("Kondisi WASPADA")
+        }
+        else if (KondisiPintuAir > 601 && KondisiPintuAir <=650) {
+            console.log("Kondisi SIAGA 2")
+        }
+        else if (KondisiPintuAir > 651) {
+            console.log("Kondisi SIAGA 1")
+        }
+    </script>
+</body>
+</html>
